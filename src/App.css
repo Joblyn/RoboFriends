@@ -11,5 +11,6 @@ h1 {
 }
 footer {
   color: #0ccac4;
-  padding-top: 10px;
+  padding: 10px;
+  margin-top: 40px; 
 }
