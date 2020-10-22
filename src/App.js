@@ -7,8 +7,6 @@ import './App.css';
 import Scroll from './Scroll';
 import ErrorBoundary from './ErrorBoundary';
 import { setSearchField } from './actions';
-// import { render } from '@testing-library/react';
-// // import { Component } from 'react';
 
 const mapStateToProps = state => {
   return {
@@ -17,7 +15,8 @@ const mapStateToProps = state => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return { onsearchChange: (event) => dispatch(setSearchField(event.target.value))
+  return { 
+    onsearchChange: (event) => dispatch(setSearchField(event.target.value))
   }
 }
 
