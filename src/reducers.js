@@ -4,7 +4,7 @@ const initailState = {
   searchField: ''
 }
 
-export const searchRobots = (state =initailState, action={}) => {
+export const searchRobots = (state=initailState, action={}) => {
   console.log(action.type)
   switch(action.type) {
     case CHANGE_SEARCH_FIELD:

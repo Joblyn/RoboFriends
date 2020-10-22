@@ -14,9 +14,9 @@ const mapStateToProps = state => {
   }
 }
 
-const mapDispatchToProps = (dispatch) => {
+const mapDispatchToProps = dispatch => {
   return { 
-    onsearchChange: (event) => dispatch(setSearchField(event.target.value))
+    onSearchChange: event => dispatch(setSearchField(event.target.value))
   }
 }
 
@@ -35,9 +35,6 @@ class App extends Component {
       .then(users => this.setState({ robots: users }))
   }
 
-  // onsearchChange = (event) => {
-  //   this.setState({searchfield: event.target.value});
-  // }
   
   render() {
     const { robots } = this.state;
